@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册 | 美团网</title>
+		<link rel="icon" href="img/logo.png" />
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+		<script src="js/jquery-3.1.0.js" charset="utf-8"></script>
+		<script src="js/bootstrap.js" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+	</head>
+	<body>
+		<div class="div1">
+			<div class="div11">
+				<img src="img/美团.png" style="width: 54px;height: 36px;"/>
+			</div>
+			<div class="div12">
+				<tr>
+			<span style="line-height: 10px;">
+				已有美团账号？
+			</span>	
+			<a href="login.html">
+				<input data-mtevent="login.normal.submit" type="submit" class="btn" name="commit" value="登录" style="color: #fff;
+    background-color: #2eb7aa;
+    border-color: #008177; height: 25px; width:46px ;border-radius: 0;text-align: center;padding-top: 2px;padding-left: 8px;">
+			</a>
+				</tr>
+			</div>
+		</div>
+		
+		<div class="div2">
+			<form action="" method="post" id="div21">
+				<table border="0px"  style="line-height: 40px;">
+					<tr>
+						<td>手机号</td>
+						<td >
+							<input type="text"  id="id11" value=""  placeholder="请输入手机号" style="width: 260px;height: 36px;" onfocus="chktel()" onblur="chktel1()" />
+						</td>
+						<td><span id="id111"  style="color: #5E5E5E;display: block; " >
+							注册成功后，全美团通用
+							
+						</span>
+						<span id="id112" style="display: none;color: red;">手机号不能为空</span>
+							<span id="id113" style="display: none;color: red;">手机号输入错误</span>
+						</td>
+					</tr>
+					<br />
+					<tr>
+						<td></td>
+						<td>
+							  <button style="width: 136px;height: 18px;text-align: center;padding-top: 0px; border-radius: 0;"  type="button" class="btn btn-default">
+							  	<span style="font-size: 5px;">
+							  		免费获取动态验证码
+							  	</span></button>
+						</td>
+						<td></td>
+					</tr>
+					<br />
+					<tr>
+						<td>短信动态码</td>
+						<td>
+							<input type="text" id="id12" placeholder="请输入动态验证码" value=""  style="width: 260px;height: 36px;"  onfocus="ch()"onblur="ch1()" />
+						</td>
+						<td></td>
+					</tr>
+					<br />
+					<tr>
+						<td>
+							创建密码
+						</td>
+						<td>
+							<input type="password" id="id13"  value=""  style="width: 260px;height: 36px;"  onfocus="chk()"onblur="chk1()" />
+						</td>
+						<td>
+							<span id="id131" style="display: none;color: red;">两次输入密码不一致</span>
+							<span id="id132" style="display: none;color: red;">请输入密码</span>
+							<span id="id133" style="display: none;color: red;">密码必须大于6位</span>
+						</td>
+					</tr>
+					<tr>
+						<td>确认密码</td>
+						<td>
+							<input type="password" id="id14"  value=""  style="width: 260px;height: 36px;"  onfocus="ck()"onblur="ck1()" />
+						</td>
+						<td>
+							<span id="id141"  style="display: none; color: red;">两次输入密码不一致</span>
+							<span id="id142" style="display: none;color: red;">请再次输入密码</span>
+							<span id="id143" style="display: none;color: red;">密码必须大于6位</span>
+						</td>
+					</tr>
+					
+				</table>
+				
+				
+				
+				
+				<input data-mtevent="login.normal.submit" type="submit" class="btn" name="commit" value="同意以下协议并注册" style="color: #fff;
+    background-color: #2eb7aa;
+    border-color: #008177; height: 36px; width:182px ;border-radius: 0;text-align: center;padding-top: 2px;padding-left: 8px;margin-left: 70px;">
+			</form>
+			<p style="margin-left: 60px; ">
+				<a href="#">
+						<span style="color:#2eb7aa;">
+							《美团网用户协议》
+						</span>
+						</a>
+				</p>	
+		</div>
+		<div class="div3" style="border-bottom: 1px solid #EEEEEE;">
+			<p class="copyright" style="font-size: 12px;
+    font-family: initial;text-align: center;margin-top: 60px;">
+        ©<a  href="#" style="color: #666;">
+meituan.com</a>&nbsp;
+        <a  target="_blank" href="#" style="color: #666;">
+京ICP证070791号</a>&nbsp;
+        <span style="color: #666;">
+京公网安备11010502025545号</span>
+    </p>
+		</div>
+		<script type="text/javascript">
+			function chktel(){
+				var  cl=document.getElementById("id11");
+				if(cl.value!="none"||cl.value!=""){
+					cl.value="";
+				}
+//				document.getElementById("id11").style.borderColor="#2eb7aa";
+			}
+			function chktel1(){
+				var  cl=document.getElementById("id11");
+//				document.getElementById("id11").style.borderColor="#666";
+				if(cl.value=="none"||cl.value==""){
+					document.getElementById("id111").style.display="none";
+					document.getElementById("id112").style.display="block";
+					document.getElementById("id113").style.display="none";
+//					document.getElementById("id11").style.Color="red";
+				}else{
+				if(cl.value!="none"||cl.value!=""){
+					var reg = /^1[3|4|5|7|8][0-9]{9}$/;
+				if(!reg.test(cl.value))
+				{
+					document.getElementById("id111").style.display="none";
+					document.getElementById("id113").style.display="block";
+					document.getElementById("id112").style.display="none";
+//					document.getElementById("id11").style.Color="red";
+				}
+				}
+				}
+			}
+			function ck(){
+				var  cl=document.getElementById("id14");
+//				document.getElementById("id14").style.borderColor="#2eb7aa";
+				if(cl.value=="none"||cl.value==""){
+						document.getElementById("id142").style.display="block";
+						document.getElementById("id141").style.display="none";
+						document.getElementById("id143").style.display="none";
+					}
+				else{
+					if(cl.value.length<6){
+						document.getElementById("id142").style.display="none";
+						document.getElementById("id141").style.display="none";
+						document.getElementById("id143").style.display="block";
+					}
+				}
+			}
+			function ck1(){
+				var  cl=document.getElementById("id14");
+//					document.getElementById("id14").style.borderColor="#666";
+				if(cl.value=="none"||cl.value==""){
+//					cl.value="请再次输入密码";
+//					document.getElementById("id14").style.Color="red";
+document.getElementById("id142").style.display="block";
+						document.getElementById("id141").style.display="none";
+						document.getElementById("id143").style.display="none";
+				}else{
+					document.getElementById("id142").style.display="none";
+				if(cl.value.length<6){
+//					cl.value="密码至少为6位";
+document.getElementById("id142").style.display="none";
+						document.getElementById("id141").style.display="none";
+						document.getElementById("id143").style.display="block";
+//					document.getElementById("id14").style.Color="red";
+				}
+				else{
+				
+				
+					var a1=document.getElementById("id13").value;
+					if(cl.value!=a1){
+//						cl.className="active";
+//						cl.value="两次密码输入不一致";
+document.getElementById("id142").style.display="none";
+						document.getElementById("id141").style.display="block";
+						document.getElementById("id143").style.display="none";
+						document.getElementById("id132").style.display="none";
+						document.getElementById("id141").style.display="block";
+						document.getElementById("id133").style.display="none";
+					}
+					else{
+						document.getElementById("id141").style.display="none";
+						document.getElementById("id141").style.display="none";
+					}
+				
+	
+			}	
+				}
+			}
+			function chk(){
+				var  cl=document.getElementById("id13");
+//				document.getElementById("id13").style.borderColor="#2eb7aa";
+					if(cl.value=="none"||cl.value==""){
+						document.getElementById("id132").style.display="block";
+						document.getElementById("id131").style.display="none";
+						document.getElementById("id133").style.display="none";
+					}
+				else{
+					if(cl.value.length<6){
+						document.getElementById("id132").style.display="none";
+						document.getElementById("id131").style.display="none";
+						document.getElementById("id133").style.display="block";
+					}
+				}
+				
+			}
+			function chk1(){
+				var  cl=document.getElementById("id13");
+//					document.getElementById("id13").style.borderColor="#666";
+				if(cl.value=="none"||cl.value==""){
+					document.getElementById("id132").style.display="block";
+						document.getElementById("id131").style.display="none";
+						document.getElementById("id133").style.display="none";
+//					cl.value="请输入密码";
+//					document.getElementById("id13").style.Color="red";
+				}
+				else{
+					document.getElementById("id132").style.display="none";
+				if(cl.value.length<6){
+//					cl.value="密码至少为6位";
+//					document.getElementById("id13").style.Color="red";
+document.getElementById("id132").style.display="none";
+						document.getElementById("id131").style.display="none";
+						document.getElementById("id133").style.display="block";
+				}
+				}
+			}
+//			function ch(){
+////				var  cl=document.getElementById("id12");
+////				if(cl.value!="none"||cl.value!=""){
+////					cl.value="";
+////				}
+//				document.getElementById("id12").style.borderColor="#2eb7aa";
+//			}
+//			function ch1(){
+//				var  cl=document.getElementById("id12");
+////					document.getElementById("id12").style.borderColor="#666";
+////				if(cl.value=="none"||cl.value==""){
+////					cl.value="请输入短信动态码";
+//////					document.getElementById("id12").style.Color="red";
+////				}
+//			}
+			
+		</script>
+	</body>
+</html>

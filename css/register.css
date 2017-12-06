@@ -1,0 +1,52 @@
+body{
+	font: 400 14px/1.5 'Hiragino Sans GB','WenQuanYi Micro Hei',tahoma,sans-serif;
+    color: #666;
+    background-color: #fff;
+}
+.div1{
+	height: 60px;
+	width: 1280px;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	/*border:1px solid #2eb7aa;*/
+	border-bottom:2px solid #2eb7aa;
+	overflow: hidden;
+}
+.div11{
+	float: left;
+	margin-top: 10px;
+	margin-left: 150px;
+}
+.div12{
+	float: right;
+	height: 40px;
+	width: 160px;
+	margin-top: 10px;
+	margin-right: 150px;
+	/*background-color: red;*/
+}
+.div2{
+	height: 360px;
+	width: 980px;
+	position: absolute;
+	top: 60px;
+	left: 150px;
+/*	background-color: blue;*/
+}
+#div21{
+	float: left;
+	height: 360px;
+	width: 980px;
+	margin-top: 0px;
+	margin-left: 0px;
+	/*background-color: red;*/
+}
+.div3{
+	height: 40px;
+	width: 1280px;
+	position: absolute;
+	top: 420px;
+	left: 0px;
+	/*background-color: pink;*/
+}

@@ -1,0 +1,83 @@
+body{
+	    background: #FFF;
+	    font: 400 14px/1.5 'Hiragino Sans GB','WenQuanYi Micro Hei',tahoma,sans-serif;
+    color: #666;
+    background-color: #fff;
+}
+.div1{
+	height: 120px;
+	width: 1280px;
+	position: relative;
+	top: 0px;
+	/*background-color: red;*/
+	
+}
+.dv1{
+	margin-top: 40px;
+	margin-left: 130px;
+}
+.div2{
+	height: 370px;
+	width: 1280px;
+	position: absolute;
+	top: 120px;
+	/*background-color: blue;*/
+	overflow: hidden;
+}
+.div21{
+	float: left;
+	height: 400px;
+	width: 500px;
+	margin-left: 130px;
+	/*background-color: green;*/
+}
+.div22{
+	float: right;
+	height: 400px;
+	width: 500px;
+	margin-right: 50px;
+
+
+}
+.div3{
+	height: 88px;
+	width: 1280px;
+	position: absolute;
+	top: 490px;
+	/*background-color: pink;*/
+	overflow: hidden;
+}
+.div32{
+	float: left;
+	height: 50px;
+	width: 980px;
+	margin-left: 130px;
+	/*background-color: red;*/
+	/*text-align: center;*/
+	/*border-bottom: 1px solid #EEEEEE;
+	border-top: 1px solid #EEEEEE;*/
+	margin-top: 20px;
+	text-align: center;
+    clear: both;
+    font-size: 12px;
+    font-family: initial;
+}
+.div311{
+	width: 100px;
+	height: 10px;
+	text-align: center;
+	/*border-right: 1px solid #EEEEEE;*/
+	/*padding: -5px;*/
+	/*margin-top: 5px;*/
+}
+.div31{
+	float: left;
+	height: 50px;
+	width: 980px;
+	margin-left: 130px;
+	/*background-color: red;*/
+	/*text-align: center;*/
+	border-bottom: 1px solid #EEEEEE;
+	border-top: 1px solid #EEEEEE;
+}
+

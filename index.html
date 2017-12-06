@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>【美团】天津团购_天津团购网_天津美团网</title>
+		<link rel="icon" href="img/logo.png" />
+		<script src="js/jquery-3.1.0.js" charset="utf-8"></script>
+		<script src="js/bootstrap.js" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script>
+			function displayDiv(idx) {
+				var divh = document.getElementById("a11" + idx.toString());
+				if (divh.style.display == "" || divh.style.display == "none") {
+					divh.style.display = "block";
+				} else {
+					divh.style.display = "none";
+				}
+			}
+			function display(idx){
+				 var dh=document.getElementById("b124"+ idx.toString());
+				if (dh.style.display =="block") {
+					dh.style.display = "none";
+				} 
+				if(dh.style.display=="none"||dh.style.display==""){
+					dh.style.display="block";
+				}
+				var divh = document.getElementById("dv1" + idx.toString());
+				if (divh.style.display == "" || divh.style.display == "none") {
+					divh.style.display = "block";
+				} else {
+					divh.style.display = "none";
+				}
+			}
+			function changcolor(i){
+				var dh = document.getElementById("a14" + i.toString());
+				dh.style.backgroundColor="#269ABC";
+			}
+			function changcolor1(c){
+				var d = document.getElementById("a14" + c.toString());
+				d.style.backgroundColor="rgb(43, 184, 170)";
+			}
+			function changimg(idx){
+				document.getElementById("b341").src="img/11"+idx+".png";
+			}
+		</script>
+	</head>
+
+	<body>
+		<div class="div1">
+		<div class="a1">
+
+			<div class="container">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<span class="glyphicon glyphicon-star-empty"></span> 收藏美团 </a>
+					</li>
+					<li>
+						<a href="login.html#123" target="_blank"  >
+							<span style="color: red;">
+								登录</span> </a>
+							</li>
+						<li><a href="register.html"  >
+							注册<span style="color: #ADADAD;">|</span></a>
+					</li>
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" onmouseover="displayDiv(1)" onmouseout="displayDiv(1)">
+							<span class="glyphicon glyphicon-phone"></span> 手机美团 <span class="caret"></span></a>
+						<ul class="dropdown-menu" id="a111" role="menu">
+							<li><img src="img/二维码下载.png" /></li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+
+					<li><a href="#">我的订单</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" onmouseover="displayDiv(2)" onmouseout="displayDiv(2)">
+								我的美团 </span> <span style="color: #ADADAD;">|</span><span class="caret"></span></a>
+						<ul class="dropdown-menu" id="a112" role="menu">
+							<li><a href="#">我的订单</a></li>
+							<li><a href="#">我的评价</a></li>
+							<li><a href="#">我的收藏</a></li>
+							<li><a href="#">我的积分</a></li>
+							<li><a href="#">抵用券</a></li>
+							<li><a href="#">我的余额</a></li>
+							<li><a href="#">账户设置</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" onmouseover="displayDiv(3)" onmouseout="displayDiv(3)">
+								最近浏览
+								</span> <span style="color: #ADADAD;">|</span><span class="caret"></span></a>
+						<ul class="dropdown-menu" id="a113" role="menu">
+							<li style="text-align: center;">暂时没有浏览记录</li>
+							<br />
+							<br />
+							<br />
+						</ul>
+
+					</li>
+
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" onmouseover="displayDiv(4)" onmouseout="displayDiv(4)">
+							<span class="glyphicon glyphicon-shopping-cart">
+									
+								</span>购物车 <span style="color: red;">0</span>件</span> <span style="color: #ADADAD;">|</span> <span class="caret"></span></a>
+						<ul class="dropdown-menu" id="a114" role="menu">
+							<li style="text-align: center;">暂时没有商品</li>
+							<br />
+							<br />
+							<br />
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" onmouseover="displayDiv(5)" onmouseout="displayDiv(5)">
+								联系客服</span> <span style="color: #ADADAD;">|</span> <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu" id="a115">
+							<li><a href="#">申请退款</a></li>
+							<li><a href="#">申请退换货</a></li>
+							<li><a href="#">查看美团券</a></li>
+
+							<li><a href="#">换绑手机号</a></li>
+							<li><a href="#">常见问题</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" onmouseover="displayDiv(6)" onmouseout="displayDiv(6)">
+								我是商家 </span> <span style="color: #ADADAD;">|</span><span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu" id="a116">
+							<li><a href="#">登录商家中心</a></li>
+							<li><a href="#">我想合作</a></li>
+							<li><a href="#">手机免费开店</a></li>
+
+							<li><a href="#">商家营销平台</a></li>
+
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" onmouseover="displayDiv(7)" onmouseout="displayDiv(7)">更多<span class="caret"></span></a>
+						<ul class="dropdown-menu" id="a117" role="menu">
+							<li><a href="#">手机版</a></li>
+							<li><a href="#">邮件订阅</a></li>
+							<li><a href="#">邀请好友</a></li>
+
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="a12">
+				<img src="img/新用户专享.png" width="1170px" height="60px" />
+			</div>
+			<div class="a13">
+				<div class="a131">
+					<img src="img/美团.png" />
+				</div>
+				<div class="a132">
+					<div class="a1321">
+						<a href="#"><span style="color: black;font-size: 20px;" >
+						天津
+					</span></a>
+					</div>
+					<div class="a1322">
+						<a class="city-info__toggle" href="#">
+							<span style="color: #999;font-size: 10px;" id="a13222">
+							切换城市
+						</span></a>
+					</div>
+				</div>
+				<div class="a133">
+					<div class="a1331">
+						<div class="input-group">
+
+							<span class="input-group-btn">
+        <button type="button" id="s11"  class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+        	团购<span class="caret"></span></button>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">商家</a></li>
+							</ul>
+							</span>
+
+							<input type="text" class="form-control">
+
+							<span class="input-group-btn">	
+      	<button type="button" class="btn btn-default" id="s12">
+         <span id="s13">搜索</span>
+							</button>
+							</span>
+
+						</div>
+					</div>
+					<div class="a1332">
+						<a class="hot-link  hot-link--first"  href="#">
+                                                      蛋糕</a>
+						<a class="hot-link "  href="#">
+火锅</a>
+						<a class="hot-link " href="#">
+足疗</a>
+						<a class="hot-link "  href="#">
+必胜客</a>
+						<a class="hot-link "  href="#">
+好利来</a>
+						<a class="hot-link "  href="#">
+津乐园</a>
+						<a class="hot-link "  href="#">
+金海来</a>
+						<a class="hot-link "  href="#">
+彤德莱</a>
+						<a class="hot-link "  href="#">
+五福西点</a>
+						<a class="hot-link  last"  href="#">
+川府老妈</a>
+					</div>
+				</div>
+				<div class="a134">
+                 <img src="img/123.png"/>
+				</div>
+			</div>
+			<div class="a14">
+               
+				<table border="0px">
+					
+				<tr>
+					<td id="a141">
+						全部分类 
+					</td>
+					<td id="a142" class="div14"   onmouseover="changcolor(2)" onmouseout="changcolor1(2)">
+						<a href="#" style="color: #FFFFFF;" >
+								首页 </a> 
+					</td>
+					<td id="a143" class="div14" onmouseover="changcolor(3)" onmouseout="changcolor1(3)">
+						<a href="#" style="color: #FFFFFF;" >
+								今日新单</a>
+					</td>
+					<td id="a144" class="div14" onmouseover="changcolor(4)" onmouseout="changcolor1(4)">
+						<a href="#"  style="color: #FFFFFF;">
+								购物</a>
+					</td>
+					<td id="a145" class="div14"onmouseover="changcolor(5)" onmouseout="changcolor1(5)">
+						<a href="#" style="color: #FFFFFF;" >
+								身边外卖</a>
+					</td>
+					<td id="a146" class="div14"onmouseover="changcolor(6)" onmouseout="changcolor1(6)">
+						<a href="#" style="color: #FFFFFF;" >
+								名店抢购</a>
+					</td>
+				</tr>
+				</table>
+			
+			</div>
+
+		</div>
+
+		<div class="b1">
+              <div class="b11">
+              	<table border="0px" class="b21" >
+              		<tr class="b122" id="b111" onmouseover="display(1)" onmouseout="display(1)">
+              			<td style="color: black;font-size: 16px;">美食</td>
+              			<td class="b123">自助餐 代金券</td>
+              			<td>
+              				<span class="b124" id="b1241">></span>
+              			</td>
+              		</tr>
+              		<tr class="b122"id="b112" onmouseover="display(2)" onmouseout="display(2)">
+              			<td style="color: black;font-size: 16px;">酒店/客栈</td>
+              			<td class="b123">经济型酒店</td>
+              			<td>
+              				<span class="b124" id="b1242">></span>
+              			</td>
+              		</tr>
+              		<tr class="b122"id="b113" onmouseover="display(3)" onmouseout="display(3)">
+              			<td style="color: black;font-size: 16px;">电影/在线选座</td>
+              			<td></td>
+              			<td >
+              				
+              				<span class="b124" id="b1243">></span>
+              			</td>
+              			
+              		</tr>
+              		<tr class="b122"id="b114" onmouseover="display(4)" onmouseout="display(4)">
+              			<td colspan="3" style="color: black;font-size: 16px;">
+              				KTV</td>
+              			
+              		</tr>
+              		<tr class="b122"id="b115" onmouseover="display(5)" onmouseout="display(5)">
+              			<td   style="color: black;font-size: 16px;">休闲娱乐</td>
+              			<td class="b123">足疗按摩 温泉</td>
+              			<td>
+              				<span class="b124" id="b1245">></span>
+              			</td>
+              		</tr>
+              		<tr class="b122" id="b116" onmouseover="display(6)" onmouseout="display(6)">
+              			<td style="color: black;font-size: 16px;">周边游/旅游</td>
+              			<td></td>
+              			<td >
+              				
+              				<span class="b124" id="b1246">></span>
+              			</td>
+              		</tr>
+              		<tr class="b122" id="b117" onmouseover="display(7)" onmouseout="display(7)">
+              			<td style="color: black;font-size: 16px;">生活服务</td>
+              			<td class="b123">婚纱摄影 个性写真</td>
+              			<td>
+              				<span class="b124" id="b1247">></span>
+              			</td>
+              		</tr>
+              		<tr class="b122"id="b118" onmouseover="display(8)" onmouseout="display(8)">
+              			<td style="color: black;font-size: 16px;">购物</td>
+              			<td class="b123">男装 女装</td>
+              			<td>
+              				<span class="b124" id="b1248">></span>
+              			</td>
+              		</tr>
+              		<tr class="b122"id="b119" onmouseover="display(9)" onmouseout="display(9)">
+              			<td style="color: black;font-size: 16px;">丽人</td>
+              			<td class="b123">美发 美甲美睫</td>
+              			<td>
+              				<span class="b124" id="b1249">></span>
+              			</td>
+              		</tr>
+              	</table>
+              </div>
+              <div class="b12">
+              	<div class="b31">
+              		
+              		<table border="0px" class="b311"  >
+              			<tr >
+      	<td> <a href="#">	热门团购&nbsp;&nbsp;&nbsp;</a></td>
+           <td><a href="#"><span style="color: red;">自助餐</span>&nbsp;&nbsp;&nbsp;</a>	</td>
+          <td><a href="#"> <span style="color: red;">火锅</span>&nbsp;&nbsp;&nbsp;</a></td>	
+        	    <td><a href="#">小吃快餐&nbsp;&nbsp;&nbsp;</a></td>
+         	 <td><a href="#">洗浴/汗蒸&nbsp;&nbsp;&nbsp;</a></td>
+         	<td><a href="#">烧烤烤肉&nbsp;&nbsp;&nbsp;</a></td>
+         <td><a href="#"> 甜点饮品&nbsp;&nbsp;&nbsp;</a></td>	
+          	 <td><a href="#">足疗按摩&nbsp;&nbsp;&nbsp;</a></td>
+          	 <td><a href="#">
+          	 	<span style="color: red;">KTV</span>&nbsp;&nbsp;&nbsp;</a></td>
+            <td><a href="#">美发&nbsp;&nbsp;&nbsp;</a></td>	
+              			</tr>
+              		</table>
+              	</div>
+              	<div class="b32">
+              		
+              		<table border="0px"  class="b312" >
+              			<tr>
+              				<td><a href="#">全部区域&nbsp;&nbsp;&nbsp;</a></td>
+              				<td><a href="#">滨海新区&nbsp;&nbsp;&nbsp;</a></td>
+              				<td><a href="#">南开区&nbsp;&nbsp;&nbsp;</a></td>
+              				<td><a href="#">和平区 &nbsp;&nbsp;&nbsp;</a></td>
+              				<td><a href="#">红桥区&nbsp;&nbsp;&nbsp;</a></td>
+              				<td><a href="#">河西区&nbsp;&nbsp;&nbsp;</a></td>
+              				<td><a href="#">河东区&nbsp;&nbsp;&nbsp;</a></td>
+              				<td><a href="#">河北区&nbsp;&nbsp;&nbsp;</a></td>
+              				<td><a href="#">北辰区&nbsp;&nbsp;&nbsp;</a></td>
+              				<td><a href="#">津南区&nbsp;&nbsp;&nbsp;</a></td>
+              			</tr>
+              		</table>
+              	</div>
+              	<div class="b33">
+              		
+              		<table border="0px" class="b313" >
+              			<tr>
+              				<td><a href="#">&nbsp;热门商圈&nbsp;&nbsp;&nbsp;</a></td>
+              				<td><a href="#">&nbsp;塘沽城区&nbsp;&nbsp;&nbsp;</a></td>
+              				<td><a href="#">&nbsp;经济开发区&nbsp;&nbsp;&nbsp;</a></td>
+              				<td><a href="#">&nbsp;大港城区&nbsp;&nbsp;&nbsp;</a></td>
+              				<td><a href="#">&nbsp;河东万达广场&nbsp;&nbsp;&nbsp;</a></td>
+              				<td><a href="#">&nbsp;大悦城 &nbsp;&nbsp;&nbsp;</a></td>
+              				<td><a href="#">&nbsp;五大道&nbsp;&nbsp;&nbsp;</a></td>
+              				<td><a href="#">&nbsp;王顶堤/华苑&nbsp;&nbsp;&nbsp;</a></td>
+              				<td><a href="#">&nbsp;大港油田&nbsp;&nbsp;&nbsp;</a></td>
+              			</tr>
+              		</table>
+              	</div>
+              	<div class="b34">
+              		<img id="b341"   src="img/111.png "style="width:688px ; height: 330px;"/>
+              		    <div class="b342">
+              		    	<a class="b3421" id="b41"   onclick="changimg(1)">1</a>
+              		    	<a class="b3421" id="b42"  onclick="changimg(2)">2</a>
+              		    	<a class="b3421" id="b43" onclick="changimg(3)">3</a>
+              		    	<a class="b3421" id="b44" onclick="changimg(4)">4</a>
+              		    	<a class="b3421" id="b45" onclick="changimg(5)">5</a>
+              		    	<a class="b3421" id="b46" onclick="changimg(6)">6</a>
+              		    </div>
+              	</div>
+              	<div class="b35">
+              		<img src="img/1元.png" style="width: 235px;height: 197px;"/>
+              	</div>
+              	<div class="b36">
+              		<img src="img/每日上新.png" style="width: 235px;height: 295px;"/>
+              	</div>
+              </div>
+		</div>
+		<div class="f1">
+			
+		</div>
+		<div class="c1">
+         <div class="c11">
+         	<table border="0px" class="c111" >
+         		<tr class="c112">
+         			<td class="c113"><a href="#">团购分类</a></td>
+         			<td class="c113"><a href="#">热门地标</a></td>
+         			<td class="c113"><a href="#">今日新单</a></td>
+         			<td class="c113"><a href="#">热门团购</a></td>
+         			<td class="c113"><a href="#">精品推荐</a></td>
+         			<td class="c113"><a href="#">热门城市</a></td>
+         			<td class="c113"><a href="#">周边城市</a></td>
+         			<td class="c113"><a href="#">美团推荐</a></td>
+         			<td class="c113"><a href="#">品牌推荐</a></td>
+         			<td class="c113"><a href="#">专题推荐</a></td>
+         			<td class="c113"><a href="#">品类推荐</a></td>
+         		</tr>
+         	</table>
+         </div>
+          <div class="c12">
+         	<table border="0px" class="c122" >
+         		<tr>
+                   <td class="c121"><a href="#">美食团购</td></a>
+                   <td class="c121"><a href="#">电影团购</td></a>
+                   <td class="c121"><a href="#">休闲娱乐团购</td></a>
+                   <td class="c121"><a href="#">旅游团购</td></a>
+                   <td class="c121"><a href="#">生活服务团购</td></a>
+                   <td class="c121"><a href="#">购物团购</td></a>
+                   <td class="c121"><a href="#">丽人团购</td></a>
+                   <td class="c121"><a href="#">团购评论</td></a>
+                   <td class="c121"><a href="#">品牌团购</td></a>
+                   <td class="c121"><a href="#">专题团购</td></a>
+                   <td class="c121"><a href="#">美团团购</td></a>
+         		</tr>
+         	</table>
+         </div>
+		</div>
+		<div class="d1">
+             <div class="d11">
+             	<a href="#"><h4 class="d111">获取更新</h4></a>
+             	<ul class="d112">
+             		<a href="#"><li class="d113">邮件订阅</li></a>
+             		<a href="#"><li class="d113">iPhone/Android</li></a>
+             		<a href="#"><li class="d113">美团QQ空间</li></a>
+             		<a href="#"><li class="d113">美团新浪微博</li></a>
+             		<a href="#"><li class="d113">sitemap</li></a>
+             		<a href="#"><li class="d113">RSS订阅</li></a>
+             	</ul>
+             </div>
+             <div class="d12">
+             	<a href="#"><h4 class="d111">商务合作</h4></a>
+             	<ul class="d112">
+             		<a href="#"><li class="d113">商家合作</li></a>
+             		<a href="#"><li class="d113">美团商家营销平台</li></a>
+             		<a href="#"><li class="d113">市场合作</li></a>
+             		<a href="#"><li class="d113">美团联盟</li></a>
+             		<a href="#"><li class="d113">美团云</li></a>
+             		<a href="#"><li class="d113">廉正邮箱</li></a>
+             	</ul>
+             </div>
+             <div class="d13">
+             	<a href="#"><h4 class="d111">公司信息</h4></a>
+             	<ul class="d112">
+             		<a href="#"><li class="d113">关于美团</li></a>
+             		<a href="#"><li class="d113">美团承诺</li></a>
+             		<a href="#"><li class="d113">媒体报道</li></a>
+             		<a href="#"><li class="d113">加入我们</li></a>
+             		<a href="#"><li class="d113">法律声明</li></a>
+             		<a href="#"><li class="d113">用户协议</li></a>
+             		<a href="#"><li class="d113">营业执照</li></a>
+             	</ul>
+             	
+             </div>
+             <div class="d14">
+             	<a href="#"><h4 class="d111">用户帮助</h4></a>
+             	<ul class="d112">
+             		<a href="#"><li class="d113">申请退款</li></a>
+             		<a href="#"><li class="d113">查看美团券密码</li></a>
+             		<a href="#"><li class="d113">常见问题</li></a>
+             		<a href="#"><li class="d113">开放API</li></a>
+             		<a href="#"><li class="d113">反诈骗公告</li></a>
+             	</ul>
+             </div>
+             <div class="d15">
+             	<img src="img/客服.png"style="width: 314px;height: 200px;"/>
+             </div>
+		</div>
+		<div class="e1">
+            <p >
+©<span title="I:2; Q:2; S:2; C:18; F:2; T:469.64; H:com">2016</span>
+<a href="#">美团网团购
+</a> meituan.com <a href="#" target="_blank">京ICP证070791号</a> |
+        <a href="#" target="_blank">
+京ICP备10211739号</a> |
+        <a href="#" target="_blank"> 
+电子公告服务规则</a>
+            </p>
+            <div style="width:300px;margin:0 auto; padding:20px 0;">
+        <a target="_blank" href="#" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+<img src="img/公安.png" style=" float:left;" >  
+<p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">
+京公网安备11010502025545号
+</p>
+</a>
+        </div>
+         <img src="img/底部.png"style="width:400px ;height: 80px; margin-left: 3%;"/>
+		</div>
+		<div class="div111" id="dv11">
+			<img src="img/1.png" style="height: 492px;width: auto;"/>
+		</div>
+		<div class="div111" id="dv12">
+			<img src="img/2.png" style="height: 492px;width: auto;"/>
+		</div>
+		<div class="div111" id="dv13">
+			<img src="img/3.png" style="height: 492px;width: auto;"/>
+		</div>
+		
+		<div class="div111" id="dv15">
+			<img src="img/5.png" style="height: 492px;width: auto;"/>
+		</div>
+		<div class="div111" id="dv16">
+			<img src="img/6.png" style="height: 492px;width: auto;"/>
+		</div>
+		<div class="div111" id="dv17">
+			<img src="img/7.png" style="height: 492px;width: auto;"/>
+		</div>
+		<div class="div111" id="dv18">
+			<img src="img/8.png" style="height: 492px;width: auto;"/>
+		</div>
+		<div class="div111" id="dv19">
+			<img src="img/9.png" style="height: 492px;width: auto;"/>
+		</div>
+		
+			
+		</div>
+		<script >
+			var num=1;
+			function changimg1(){
+				if(num<=6){
+				document.getElementById("b341").src="img/11"+num.toString()+".png";
+//				document.getElementById("b4"+num.toString()).style.backgroundColor="red";
+				num++;
+				}
+				else{
+					num=1;
+					document.getElementById("b341").src="img/11"+num.toString()+".png";
+//					document.getElementById("b4"+num.toString()).style.backgroundColor="red";
+					num++;
+				}
+			}
+			setInterval("changimg1()",3000);
+		</script>
+	</body>
+
+</html>
